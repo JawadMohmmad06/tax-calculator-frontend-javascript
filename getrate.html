@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/getrate.css">
+	<script src="js/getrate.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+	<script>  
+$(function(){ 
+  $("#header").load("adminheader.html");  
+ 
+}); 
+</script>
+</head>
+<body onload="getrate()">
+	<div id="header"></div> 
+	<div id="form">
+<form onsubmit="return update(this)" novalidate >
+	
+	<label for="genaral1stSlab">Genarel 1St Slab </label>
+	<input type="text" name="genaral1stSlab" id="genaral1stSlab">
+	<br><br>
+	<label for="femalgenaral1stSlab">Female 1St slab</label>
+	<input type="text" name="femalgenaral1stSlab" id="femalgenaral1stSlab">
+	<br><br>
+	<label for="disa1stSlab">Disable 1ST slab</label>
+	<input type="text" name="disa1stSlab" id="disa1stSlab">
+	<br><br>
+	<label for="ff1stSlab">freedom fighters 1st Slab</label>
+	<input type="text" name="ff1stSlab" id="ff1stSlab">
+	<br><br>
+	<label for="firstSlab">First Slab </label>
+	<input type="text" name="firstSlab" id="firstSlab">
+	<br><br>
+	<label for="sslab">Secend Slab</label>
+	<input type="text" name="sslab" id="sslab">
+	<br><br>
+	<label for="tslab">Third slab</label>
+	<input type="text" name="tslab" id="tslab">
+	<br><br>
+	<label for="fslab">Forth Slab</label>
+	<input type="text" name="fslab" id="fslab">
+	<br><br>
+	<label for="restslab">Rest of the Slab</label>
+	<input type="text" name="restslab" id="restslab">
+	<br><br>
+	<label for="firstSlabRate">1St slab rate </label>
+	<input type="text" name="firstSlabRate" id="firstSlabRate">
+	<br><br>
+	<label for="secSLabRate">Second Slab rate</label>
+	<input type="text" name="secSLabRate" id="secSLabRate">
+	<br><br>
+	<label for="thSlabRate">Third Slab rate</label>
+	<input type="text" name="thSlabRate" id="thSlabRate">
+	<br><br>
+	<label for="fSlabRate">Forth Slab Rate</label>
+	<input type="text" name="fSlabRate" id="fSlabRate">
+	<br><br>
+	<label for="reSlabRate">Rest Slab rate </label>
+	<input type="text" name="reSlabRate" id="reSlabRate">
+	<br><br>
+	<label for="tax_year">Tax Year </label>
+	<input type="text" name="tax_year" id="tax_year">
+	<br><br>
+
+	
+	<br><br>
+	<input type="submit" name="submit" id="submit" value="Update" >
+	
+</form>
+<p id="response"></p>
+</div>
+<table id="tt">
+	<thead>
+		<th>Genarel 1St Slab</th>
+		<th>Female 1St slab</th>
+		<th>Disable 1ST slab</th>
+		<th>freedom fighters 1st Slab</th>
+		<th>First Slab</th>
+		<th>Secend Slab</th>
+		<th>Third slab</th>
+		<th>Forth Slab</th>
+		<th>Rest of the Slab</th>
+		<th>1St slab rate</th>
+		<th>Second Slab rate</th>
+		<th>Third Slab rate</th>
+		<th>Forth Slab Rate</th>
+		<th>Rest Slab rate</th>
+		<th>Tax Year</th>
+	</thead>
+<tbody id="table">
+</tbodey>
+	</table>
+	
+</body>
+</html>

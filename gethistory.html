@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculations</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main_ltl.css">
+	<script src="js/history.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+	<script>  
+$(function(){ 
+  $("#header").load("userheader.html");  
+ 
+}); 
+</script> 
+</head>
+<body onload="getres()">
+<div id="header"></div> 
+<div id="form1">
+	<form onsubmit="return del(this)">
+	<label for="id">ID</label>
+	<input type="number" name="id" id="id">
+	
+	
+	<br><br>
+	<input type="submit" name="submit" id="submit" value="Delete">
+	</form>
+	<p id="response"></p>
+	<br>
+	<br>
+<table id="tt">
+	<thead>
+		<th>Id</th>
+		<th>Basic salary</th>
+		<th>house_rent</th>
+		<th>Medical</th>
+		<th>Con</th>
+		<th>Festibal</th>
+		<th>Investment </th>
+		<th>Category</th>
+		<th>Zone</th>
+		<th>Taxable Income</th>
+		<th>Total Tax</th>
+		<th>Monthly tax</th>
+	</thead>
+<tbody id="table">
+</tbodey>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calxculate</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/calcu.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+	<script>  
+$(function(){ 
+  $("#header").load("userheader.html");  
+ 
+}); 
+</script> 
+</head>
+<body>
+	<div id="header"></div> 
+	<div id="form">
+<form onsubmit="return calcu(this)" novalidate >
+	<label for="category">Category</label>
+  <select name="category" id="category">
+  	<option value="General">General</option>
+    <option value="Female/Senior Citizen">Female/Senior Citizen</option>
+    <option value="Disabled">Disabled</option>
+    <option value="Freedom Fighters">Freedom Fighters</option>
+  </select>
+  <br><br>
+  <label for="zone">Zone</label>
+  <select name="zone" id="zone">
+  	<option value="Dhaka/Chitagong">Dhaka/Chitagong</option>
+    <option value="Other City">Other City</option>
+    <option value="Rest Of the word">Rest Of the word</option>
+  </select>
+  <br><br>
+	<label for="basic_salary">Basic Salary</label>
+	<input type="number" name="basic_salary" id="basic_salary">
+	<br><br>
+	<label for="house_rent">House Rent</label>
+	<input type="number" name="house_rent" id="house_rent">
+	<br><br>
+	<label for="medical">Medical</label>
+	<input type="number" name="medical" id="medical">
+	<br><br>
+	<label for="con">Conveyance</label>
+	<input type="number" name="con" id="con">
+	<br><br>
+	<label for="festival">Festibal(Half Yearly)</label>
+	<input type="number" name="festival" id="festival">
+	<br><br>
+	<br><br>
+	<label for="investment">Investment</label>
+	<input type="number" name="investment" id="investment">
+	<br><br>
+
+	<input type="submit" name="submit" id="submit" value="Calculate">
+	
+</form>
+<p>Total taxable income:</p><p id="taxble_income"></p>
+<br>
+
+<p>Total Tax</p><p id="total_tax"></p>
+<br>
+
+<p>Monthly Tax</p><p id="m_tax"></p>
+</div>
+</body>
+</html>
